@@ -1,0 +1,67 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function countWords(str){                Using Split method
+        //     return str.split('').length;    -- if there is nospace means it takes character length
+        // }                                   -- if there is space means it takes words length
+        // console.log(countWords('I love You'));        ANS-->10
+
+        // function countWords(str){
+        //     totalWords=1;
+        //     for(i=0;i<str.length;i++){
+        //         if(str[i]==" "){
+        //             totalWords++;
+        //         }
+        //     }
+        //     return totalWords;
+        // }
+        // console.log(countWords('I love You too')); 
+        // console.log(countWords(paragraph,'love', 'you'));         
+        //  const paragraph = 'I love teaching. If you do not love teaching what else can you love. I love JavaScript if you do not love something which can give life to your application what else can you love.';
+        
+
+//         function countWords(paragraph ,word1, word2){
+//     let countWord1 = 0;
+//     let countWord2 = 0;
+
+//     res = paragraph.split(' ');
+//     for(let i=0;i<res.length;i++) {
+//         if(res[i] == word1) {countWord1++; };
+//         if(res[i] == word2) {countWord2++; };
+//     };
+    
+//     if(countWord1>countWord2){
+//         return word1;
+//         }else{
+//             return word2;
+//             };
+// };
+
+// console.log(countWords(paragraph,'love', 'you'));
+
+function countWords(paragraph, word1, word2) {
+
+var first = paragraph.split(word1).length - 1;
+var second = paragraph.split(word2).length - 1;
+
+if(first > second){
+    console.log(`${word1} has occured more times than ${word2}`)
+} else {
+    console.log(`${word2} has occured more times than ${word1}`)
+}
+
+}
+
+const paragraph = 'I love teaching. If you do not love teaching what else can you love. I love JavaScript if you do not love something which can give life to your application what else can you love.';
+console.log((countWords(paragraph, "love", "you")));
+
+    </script>
+</body>
+</html>

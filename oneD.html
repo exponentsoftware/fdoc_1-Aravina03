@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         function varietyOfWords(sentence){
+//     let res = [];
+//      res1 =sentence.split(' ');
+//         for(let i=0;i<res1.length;i++) {
+//             res.push(res1[i]);
+//         }
+//     return res.length;
+// }
+const sentence =  `I am a teacher and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?`
+// function varietyOfWords(param) {
+//       answer = param.split(' ');
+//       function onlyUnique(value, index, self) { 
+//           return self.indexOf(value) === index;
+//       }
+    
+//       var unique = answer.filter( onlyUnique );
+    
+//       return unique.length;
+//     }
+  
+//     console.log(varietyOfWords(sentence));
+
+function varietyOfWords(str) { 
+    return str.split(" ").length;
+  }
+
+  const sample = `I am a teacher and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?`
+  
+  console.log(varietyOfWords(sample));
+    </script>
+</body>
+</html>

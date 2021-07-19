@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr=10;
+        // const randomArr=[];
+        // for(let i=0;i<arr.length;i++){
+        //     randomArr.push(Math.random())
+        // }
+        // return randomArr;
+
+    //     let arr = [];
+        
+    //         for(let i =1; i <= 7; i++){
+    //     var num = Math.floor(Math.random() * 9) + 1;
+    //          if(arr.indexOf(num) === -1) {
+    //      arr.push(num);
+    //     };
+    // };
+
+    //   return arr;
+ function random(arr){
+var n;
+var r=[];
+for (n=1; n<=7; ++n)
+{
+  var i = Math.floor((Math.random() * (10-n)) + 1);
+  r.push(arr[i]);
+  arr[i] = arr[10-n];
+}
+return r;
+}
+
+var a = [0,1,2,3,4,5,6,7,8,9];
+
+console.log(random(a))
+  
+console.log(arr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arrOne = [1, 4, 6, 2, 1];
+        // function checkUniqueness(arrOne){
+        //      for (var i = 0; i < arrOne. length; i++){
+        //           for (var j = 0; j < arrOne. length; j++){
+        //                if (i != j){ 
+        //                    if (arrOne[i] == arrOne[j]){
+        //                         return true;          // means there are duplicate values
+        //                  }
+        //              }
+        //          }
+        //      } return false; 
+            
+        //      console.log(checkUniqueness(arrOne));
+//         const arrOne = [1, 4, 6, 2, 1];
+//         const arrTwo = [1, 4, 6, 2, 3]
+//     function checkUniqueness(arr) {
+//      for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//             if(arr[i] !== arr[j]){
+//                 return true;
+//             }else{
+//                 return false;
+//              };
+//          };
+//      };
+//   };
+//     console.log(checkUniqueness(arrOne));
+function checkUniqueness(arr) {
+
+var unique= arr.filter((value, index) => {
+    arr.indexOf(value) === index;
+})
+
+if(arr === unique){
+    return true
+} else {
+    return false
+}
+}
+const arrOne = [1, 4, 6, 2, 1]
+const arrTwo = [1, 4, 6, 2, 3]
+console.log(checkUniqueness(arrOne))
+
+    </script>
+</body>
+</html>

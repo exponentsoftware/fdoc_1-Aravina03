@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced. -->
+    <!-- <p id="demo">Read My Mind</p>
+      <button onclick="myFunction()">Click Me</button> -->
+    <script>
+    //   function myFunction(){
+    //     var str =  document.getElementById("demo").innerHTML;
+    //     var res = str.replace("Mind", "Soul");
+    //     document.getElementById("demo").innerHTML = res;
+    //     }
+        const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`;
+        function cleanText(sentence) {
+             return newsentence =sentence.replace(/[^\w\s]/gi, '');
+            }
+          console.log(cleanText(sentence));
+    </script>
+</body>
+</html>
